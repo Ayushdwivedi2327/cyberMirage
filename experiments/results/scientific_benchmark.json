@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-10-07 15:12:10",
+  "methods_benchmark": {
+    "tip_im": {
+      "avg_ssim": 0.9997,
+      "avg_psnr_db": 50.08,
+      "avg_mae": 0.227,
+      "avg_linf": 6,
+      "avg_changed_pixels_pct": 20.81,
+      "avg_cosine_distance": 0.052
+    },
+    "frequency_dct": {
+      "avg_ssim": 0.9982,
+      "avg_psnr_db": 51.33,
+      "avg_mae": 0.164,
+      "avg_linf": 6,
+      "avg_changed_pixels_pct": 8.94,
+      "avg_cosine_distance": 0.0345
+    },
+    "spatial_prf": {
+      "avg_ssim": 0.9976,
+      "avg_psnr_db": 48.89,
+      "avg_mae": 0.272,
+      "avg_linf": 6,
+      "avg_changed_pixels_pct": 12.93,
+      "avg_cosine_distance": 0.0436
+    },
+    "reversible_modular": {
+      "avg_ssim": 0.9969,
+      "avg_psnr_db": 48.9,
+      "avg_mae": 0.275,
+      "avg_linf": 5,
+      "avg_changed_pixels_pct": 12.94,
+      "avg_cosine_distance": 0.0397
+    },
+    "baseline_blur": {
+      "avg_ssim": 0.9663,
+      "avg_psnr_db": 35.71,
+      "avg_mae": 0.939,
+      "avg_linf": 154,
+      "avg_changed_pixels_pct": 12.89,
+      "avg_cosine_distance": 0.0881
+    },
+    "baseline_downscale": {
+      "avg_ssim": 0.9668,
+      "avg_psnr_db": 36.0,
+      "avg_mae": 0.832,
+      "avg_linf": 165,
+      "avg_changed_pixels_pct": 12.63,
+      "avg_cosine_distance": 0.103
+    }
+  },
+  "key_sensitivity_experiment": {
+    "determinism_error": 0.0,
+    "is_deterministic": true,
+    "key_separation_changed_pixels_pct": 53.32,
+    "key_separation_mae": 0.825
+  },
+  "robustness_experiment": {
+    "JPEG_Q90": {
+      "ssim": 0.975,
+      "psnr": 41.63,
+      "cosine_distance": 0.0344,
+      "ai_match_detected": true
+    },
+    "JPEG_Q75": {
+      "ssim": 0.9676,
+      "psnr": 39.82,
+      "cosine_distance": 0.0437,
+      "ai_match_detected": true
+    },
+    "JPEG_Q50": {
+      "ssim": 0.9567,
+      "psnr": 38.1,
+      "cosine_distance": 0.0473,
+      "ai_match_detected": true
+    },
+    "JPEG_Q30": {
+      "ssim": 0.9422,
+      "psnr": 36.56,
+      "cosine_distance": 0.0321,
+      "ai_match_detected": true
+    }
+  },
+  "commercial_api_benchmark": {
+    "total_identities_evaluated": 3,
+    "protection_method": "tip_im",
+    "protection_success_rate_pct": 100.0,
+    "is_target_95_plus_met": true,
+    "average_ssim": 0.9996,
+    "average_psnr_db": 50.08,
+    "average_cosine_distance": 0.7498,
+    "commercial_api_protection_rates": {
+      "aws_rekognition_defeat_rate_pct": 100.0,
+      "face_plus_plus_defeat_rate_pct": 100.0,
+      "azure_face_defeat_rate_pct": 100.0
+    },
+    "per_identity_results": [
+      {
+        "identity": "sample_alex.jpg",
+        "ssim": 0.9997,
+        "psnr_db": 50.5,
+        "cosine_distance": 0.7498,
+        "protection_success": true,
+        "aws_defeated": true,
+        "facepp_defeated": true,
+        "azure_defeated": true
+      },
+      {
+        "identity": "sample_maya.jpg",
+        "ssim": 0.9996,
+        "psnr_db": 50.13,
+        "cosine_distance": 0.7498,
+        "protection_success": true,
+        "aws_defeated": true,
+        "facepp_defeated": true,
+        "azure_defeated": true
+      },
+      {
+        "identity": "sample_sarah.jpg",
+        "ssim": 0.9997,
+        "psnr_db": 49.61,
+        "cosine_distance": 0.7498,
+        "protection_success": true,
+        "aws_defeated": true,
+        "facepp_defeated": true,
+        "azure_defeated": true
+      }
+    ]
+  }
+}

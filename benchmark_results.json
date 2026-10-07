@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-10-07 15:13:17",
+  "total_images": 3,
+  "lfw_simulation": {},
+  "copydays_simulation": {},
+  "jpeg_robustness_test": {
+    "zero_noise": {
+      "Q90": {
+        "cosine_distance": 0.1753,
+        "ai_match_detected": true
+      },
+      "Q75": {
+        "cosine_distance": 0.1556,
+        "ai_match_detected": true
+      },
+      "Q50": {
+        "cosine_distance": 0.1407,
+        "ai_match_detected": true
+      },
+      "Q30": {
+        "cosine_distance": 0.1831,
+        "ai_match_detected": true
+      }
+    },
+    "adversarial_noise": {
+      "Q90": {
+        "cosine_distance": 0.115,
+        "ai_match_detected": true
+      },
+      "Q75": {
+        "cosine_distance": 0.0975,
+        "ai_match_detected": true
+      },
+      "Q50": {
+        "cosine_distance": 0.1097,
+        "ai_match_detected": true
+      },
+      "Q30": {
+        "cosine_distance": 0.1059,
+        "ai_match_detected": true
+      }
+    }
+  },
+  "modes_comparison": {
+    "geometric_shift": {
+      "avg_ssim": 0.8968,
+      "avg_psnr_db": 24.74,
+      "avg_cosine_distance": 0.0948,
+      "avg_noise_delta": 4.04,
+      "defeat_rate_pct": 0.0
+    },
+    "synthetic_persona": {
+      "avg_ssim": 0.9344,
+      "avg_psnr_db": 26.57,
+      "avg_cosine_distance": 0.1674,
+      "avg_noise_delta": 2.96,
+      "defeat_rate_pct": 0.0
+    },
+    "harmonic_shield": {
+      "avg_ssim": 0.9833,
+      "avg_psnr_db": 43.28,
+      "avg_cosine_distance": 0.0663,
+      "avg_noise_delta": 0.58,
+      "defeat_rate_pct": 0.0
+    },
+    "adversarial_noise": {
+      "avg_ssim": 0.9231,
+      "avg_psnr_db": 32.31,
+      "avg_cosine_distance": 0.1331,
+      "avg_noise_delta": 2.22,
+      "defeat_rate_pct": 0.0
+    }
+  },
+  "restoration_validation": {
+    "max_pixel_difference": 0.0,
+    "restored_ssim": 1.0,
+    "lossless_verified": true
+  }
+}
